@@ -1,0 +1,24 @@
+.superInput {
+    background-color: #a9e195;
+    outline: transparent;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.errorInput {
+    border: 1px solid #3b68d5;
+    background-color: #f3cbcb;
+    padding: 3px;
+    border-radius: 5px;
+    outline: transparent;
+}
+
+.error {
+    color: #f50606;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.blockInput {
+    margin-top: 20px;
+}
+

@@ -1,0 +1,35 @@
+.default {
+    background-color: #36f3dd;
+    border: none;
+    padding: 4px;
+    width: 65px;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #04236e;
+    transition: all 0.5s;
+}
+
+.default:hover {
+    background: linear-gradient(to bottom right, blue, pink);
+}
+
+.red {
+    background-color: #f53333;
+}
+
+.blockBtn {
+    margin: 5px;
+    width: 65px;
+}
+
+.default:disabled {
+    opacity: 0.5;
+    border: 1px solid #13a7c9;
+}
+
+.red:hover {
+    background-color: #f39797;
+    background: linear-gradient(to bottom right, #e638ec, pink);
+}
