@@ -12,7 +12,7 @@ const HeaderMenu = () => {
     return (
         <>
             <div className={s.push} onClick={()=> setMenuActive(!menuActive)}>PUSH</div>
-            <div className={menuActive ? `${s.nav_block} ${s.active_nav}` : `${s.nav}`}>
+            <div className={menuActive ? `${s.nav_block} ${s.active_nav}` : `${s.nav} ${s.nav_block}`}>
                 <NavLink to={'/pre-junior'} className={setActive}>prev-junior</NavLink>
                 <NavLink to={'/junior'} className={setActive}>junior</NavLink>
                 <NavLink to={'/junior-plus'} className={setActive}>junior-plus</NavLink>
