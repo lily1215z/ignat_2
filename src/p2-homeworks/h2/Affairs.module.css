@@ -1,3 +1,4 @@
+
 .name {
     width: 100px;
 }
@@ -9,7 +10,6 @@
 .box {
     display: flex;
     justify-content: space-between;
-    width: 300px;
     margin-bottom: 7px;
 }
 
@@ -23,9 +23,10 @@
 }
 
 .inner {
-    width: 330px;
+    width: 480px;
     padding: 20px;
-    background-color: #00d0ff;
+    background-color: rgba(0, 208, 255, 0.85);
+    margin: 0 auto;
 }
 
 .btn {

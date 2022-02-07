@@ -1,3 +1,42 @@
+.title {
+    color: #fff;
+}
 .active {
-    color: #f80000;
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(56, 72, 245);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link {
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:  #00d0ff;
+}
+
+.nav_block a + a {
+    margin-left: 40px;
+}
+.nav_block {
+    padding: 20px 0 20px 25px;
+}
+.nav {
+    transform:translateX(-100%);
+    transition: all 0.3s;
+}
+
+.active_nav {
+    transform:translateX(0);
+}
+.push {
+    color: #fff;
+    cursor: pointer;
 }

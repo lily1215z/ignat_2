@@ -1,19 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import s from './HeaderNav.module.css'
 
-// type FuncType = {
-//     setActive: boolean
-// }
+type setActiveType = ((props: {isActive: boolean}) => string)
 
-function HeaderMenu() {
-    const setActive = ({isActive}: any) => isActive ? s.active : ''
+const HeaderMenu = () => {
+    const setActive: setActiveType = ({isActive}) => isActive ? `${s.active}` : s.link
+    const [menuActive, setMenuActive] = useState(false)
+
+    //закоментила в стилях св-во скрытия
     return (
-        <div>
-            <NavLink to={'/pre-junior'} className={setActive}>prev-junior</NavLink>
-            <NavLink to={'/junior'} className={setActive}>junior</NavLink>
-            <NavLink to={'/junior-plus'} className={setActive}>junior-plus</NavLink>
-        </div>
+        <>
+            <div className={s.push} onClick={()=> setMenuActive(!menuActive)}>PUSH</div>
+            <div className={menuActive ? `${s.nav_block} ${s.active_nav}` : `${s.nav}`}>
+                <NavLink to={'/pre-junior'} className={setActive}>prev-junior</NavLink>
+                <NavLink to={'/junior'} className={setActive}>junior</NavLink>
+                <NavLink to={'/junior-plus'} className={setActive}>junior-plus</NavLink>
+            </div>
+        </>
     )
 }
 

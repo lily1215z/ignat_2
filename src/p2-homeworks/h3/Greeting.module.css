@@ -1,17 +1,26 @@
 .allOk {
-    border: 1px solid #7cf152;
+    max-width: 300px;
+    width: 100%;
+    opacity: 0.5;
+    outline: transparent;
 }
 
 .error {
     border: 1px solid red;
 }
 .box {
-    background-color: rgb(0, 208, 255);
-    width: 300px;
+    background-color: rgba(0, 208, 255, 0.85);
+    width: 480px;
     padding: 20px;
+    margin: 0 auto;
 }
 .num {
     margin-left: 15px;
+    box-shadow: 0px 0px 6px 4px rgba(13, 32, 176, 0.2);
+    max-width: 30px;
+    width: 100%;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .errMessage {
@@ -21,4 +30,5 @@
 .inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }

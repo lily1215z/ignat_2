@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
 import style from '../h1/Message.module.css'
+import s from "./Affairs.module.css"
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'  //  + need to fix any
@@ -23,11 +24,11 @@ const defaultAffairs: Array<AffairType> = [ // +need to fix any
 // pure helper functions сЮДА ПРИХОДИТ МАССИВ И ФИЛЬТР КОТ БУДЕТ ЕГО ФИЛЬТРОВАТЬ
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // +need to fix any
     if (filter === 'high') {
-        return affairs.filter(i=> i.priority === 'high')
+        return affairs.filter(i => i.priority === 'high')
     } else if (filter === 'low') {
-        return affairs.filter(i=>i.priority === 'low')
+        return affairs.filter(i => i.priority === 'low')
     } else if (filter === 'middle') {
-        return affairs.filter(i=>i.priority === 'middle')
+        return affairs.filter(i => i.priority === 'middle')
     } else {      //else return // +need to fix
         return affairs
     }
@@ -36,7 +37,7 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
 //сюда приходит список дел и айди дела кот нужно удалить. И возвращаем массив дел без нужного.
 // это  _id на которое кликнули, а  i._id это из массива
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // +need to fix any
-    return affairs.filter(i=> i._id !== _id)    // +need to fix
+    return affairs.filter(i => i._id !== _id)    // +need to fix
 }
 
 function HW2() {
@@ -53,12 +54,14 @@ function HW2() {
         <div>
             <h1 className={style.title}>homeworks 2</h1>
 
+
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
             />
+
 
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}

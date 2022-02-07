@@ -4,17 +4,17 @@ import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
 import Junior from "./pages/Junior";
 import JuniorPlus from "./pages/JuniorPlus";
+import s from "./HeaderNav.module.css"
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
-    // add paths
     JUNIOR: '/junior',
     JUNIOR_PLUS: '/junior-plus'
 }
 
 function Routing() {
     return (
-        <div>
+        <div className={s.nav}>
             <Routes>
                 <Route path={'/'} element={<Navigate to={PATH.PRE_JUNIOR} />} />
                 <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
@@ -30,7 +30,7 @@ function Routing() {
             {/*<Route path={'/'} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>*/}
 
             {/*<Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>*/}
-                // add routes
+
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
             {/*<Route render={() => <Error404/>}/>*/}

@@ -6,14 +6,20 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url(../src/img/bg22.jpg);
-    background-position: center center;
-    -webkit-background-size: cover;
+    background-image: url(../src/img/bg2.jpg);
     background-size: cover;
-    margin: 50px 20px;
+    height: 100%;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*:before
+*:after {
+    box-sizing: inherit;
 }

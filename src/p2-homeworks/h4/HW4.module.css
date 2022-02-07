@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 208, 255, 0.85);
+    padding-bottom: 20px;
 }
 
 .testSpanError {
     color: blue;
 }
 
-.blockHW {
-    background-color: #00d0ff;
-    width: 300px;
+.wrapper {
+    margin: 0 auto;
+    width: 520px;
 }
