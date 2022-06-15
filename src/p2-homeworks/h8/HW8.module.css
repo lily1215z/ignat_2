@@ -1,0 +1,31 @@
+
+.block {
+    background-color: #04236e;
+    padding: 15px 50px;
+    opacity: 0.8;
+}
+
+.wrap {
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.box_btn {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner {
+    width: 450px;
+    margin: 0 auto;
+}
+

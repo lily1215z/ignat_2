@@ -23,3 +23,22 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+.pen {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.block-hw {
+    width: 460px;
+    margin: 0 auto;
+    border: 5px solid rgba(0, 208, 255, 0.85);
+    padding: 25px;
+}
+
+/*.span {*/
+/*    display: inline-block;*/
+/*    height: 31px;*/
+/*    padding-top: 10px;*/
+/*    cursor: pointer;*/
+/*}*/

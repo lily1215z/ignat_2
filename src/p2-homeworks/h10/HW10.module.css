@@ -1,0 +1,24 @@
+.loading {
+    width: 55px;
+    height: 55px;
+    border: 10px solid #fff;
+    border-top-color: #5b5bf6;
+    border-bottom-color: #a2a2e8;
+    border-left-color: #8453e7;
+    border-right-color: #5d1de0;
+    border-radius: 20px;
+    /*border-radius: 50%;*/
+    position: relative;
+    left: 50px;
+    top: 50px;
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

@@ -1,0 +1,31 @@
+.time {
+    color: #fff;
+    font-size: 20px;
+}
+
+.date {
+    color: #fff;
+    font-size: 20px;
+}
+
+.inner {
+    min-height: 70px;
+    text-align: center;
+}
+
+.btn {
+    max-width: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #00d0ff;
+}
+
+.wrapper {
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #04236e;
+    opacity: 0.8;
+}

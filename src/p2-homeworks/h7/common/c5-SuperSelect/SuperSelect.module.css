@@ -1,0 +1,31 @@
+.select {
+    width: 95px;
+    padding: 3px;
+    background-color: #36f3dd;
+    margin: 10px 0;
+    /*appearance: none;*/
+    /*background-image: url('./src/img/arrow.png');*/
+}
+
+.select:focus {
+    outline: none;
+    border: 1px solid #1e096b;
+}
+
+.option {
+    background-color: #36f3dd;
+    text-align: center;
+}
+
+.option:checked {
+    background-color: #5d1de0;
+    color: #1e096b;
+}
+
+.input {
+    color: #fff;
+}
+
+.input + .input {
+    margin-left: 5px;
+}
