@@ -42,13 +42,18 @@ function HW8() {
          <div className={redus.inner}>
              <div className={redus.block}>
                  {finalPeople}
+                 <div className={redus.box_btn}>
+                     <div className={redus.btn}><SuperButton onClick={sortUp}>sort up</SuperButton></div>
+                     <div className={redus.btn}><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+                     <div className={redus.btn}><SuperButton onClick={check18}>check 18</SuperButton></div>
+                 </div>
              </div>
 
-             <div className={redus.box_btn}>
-                 <div className={redus.btn}><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-                 <div className={redus.btn}><SuperButton onClick={sortDown}>sort down</SuperButton></div>
-                 <div className={redus.btn}><SuperButton onClick={check18}>check 18</SuperButton></div>
-             </div>
+             {/*<div className={redus.box_btn}>*/}
+             {/*    <div className={redus.btn}><SuperButton onClick={sortUp}>sort up</SuperButton></div>*/}
+             {/*    <div className={redus.btn}><SuperButton onClick={sortDown}>sort down</SuperButton></div>*/}
+             {/*    <div className={redus.btn}><SuperButton onClick={check18}>check 18</SuperButton></div>*/}
+             {/*</div>*/}
          </div>
 
             {/*для личного творчества, могу проверить*/}

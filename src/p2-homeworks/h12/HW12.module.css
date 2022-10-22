@@ -14,10 +14,15 @@
     color: aqua;
 }
 
-.some {
+.default {
     background: lightgreen;
 }
 
 .some-text {
     color: darkslateblue;
+}
+.box {
+    text-align: center;
+    min-height: 100px;
+    margin-top: 10px;
 }

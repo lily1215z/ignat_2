@@ -1,0 +1,15 @@
+.text {
+    display: block;
+    background-color: rgba(0, 208, 255, 0.85);
+    margin-bottom: 10px;
+    padding: 5px 0 5px 25px;
+}
+
+.box_text {
+    position: relative;
+}
+
+.box_btn {
+    display: flex;
+    justify-content: space-around;
+}

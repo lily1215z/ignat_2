@@ -11,31 +11,29 @@ function HW10() {
     const loading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
 
     const setLoading = () => {
-        // dispatch
         dispatch(loadingAC(true))
 
-        // setTimeout
         setTimeout(() => {
             dispatch(loadingAC(false))
         }, 2000)
-
     };
 
     return (
-        <div>
+        <div className={redus.wrap}>
 
-            <span className={redus.wrap}>homeworks 10</span>
+            homeworks 10
 
-            {/*should work (должно работать)*/}
-            {loading
-                ? (
-                    <div className={load.loading}></div>
-                ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
-                    </div>
-                )
-            }
+      <div className={load.block}>
+          {loading
+              ? (
+                  <div className={load.loading}></div>
+              ) : (
+                  <div>
+                      <SuperButton onClick={setLoading} className={load.btn}>set loading...</SuperButton>
+                  </div>
+              )
+          }
+      </div>
 
 
             {/*для личного творчества, могу проверить*/}

@@ -13,6 +13,17 @@
     top: 50px;
     animation: 1s spin infinite linear;
 }
+.block {
+    max-width: 400px;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #04236e;
+    margin: 0 auto;
+    padding: 10px 25px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
 
 @keyframes spin {
     from {
@@ -21,4 +32,9 @@
     to {
         transform: translate(-50%, -50%) rotate(360deg);
     }
+}
+
+.btn {
+    margin: 14px 0;
+    padding: 7px 0;
 }

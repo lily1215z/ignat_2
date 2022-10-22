@@ -5,11 +5,8 @@ function HW9() {
     return (
         <div>
 
-            homeworks 9
-
             {/*should work (должно работать)*/}
             <Clock/>
-
 
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeClock/>*/}

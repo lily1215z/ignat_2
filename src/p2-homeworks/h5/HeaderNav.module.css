@@ -22,12 +22,18 @@
     color:  #00d0ff;
 }
 
-.nav a + a {
+.header_nav a + a {
     margin-left: 40px;
 }
 
 .nav {
     padding: 20px 0 20px 25px;
+    margin-top: 80px;
+}
+.header_nav {
+    padding: 10px 0 10px 25px;
+    position: absolute;
+    top: 70px;
 }
 
 .push {

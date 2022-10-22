@@ -22,10 +22,13 @@
 }
 
 .wrapper {
-    max-width: 180px;
+    max-width: 410px;
     width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #04236e;
     opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
