@@ -3,7 +3,7 @@ import Message from "./Message";
 import style from './Message.module.css'
 
 const messageData = {
-    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
+    avatar: 'https://i.pinimg.com/originals/9a/da/3b/9ada3bc305a1f45eab527f60da172d53.png',
     name: 'Artem',
     message: 'npm start нажимал?',
     time: '22:00',
